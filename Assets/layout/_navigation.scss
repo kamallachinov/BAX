@@ -195,99 +195,41 @@ header {
     align-items: center;
     flex-direction: column;
 
-    .row {
-        width: 100%;
-
-
-        .col {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            width: 100%;
-
-            .secCol {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                flex-direction: column;
-                width: 35%;
-
-
-                h2 {
-                    font-size: 3.5rem;
-                    font-weight: 300;
-                    line-height: 1.2;
-                    margin-bottom: 12px;
-                }
-
-                p {
-                    margin-top: 0;
-                    margin-bottom: 1rem;
-                }
-
-                img {
-
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 100%;
-                }
-
-            }
-        }
-
-    }
-
-
-
-
-
-
-
-}
-
-@media only screen and (max-width: 576px) {
-    .secContainer {
+    .secRow {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-
-        .secRow {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-        }
-
-        .secCol {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 3rem;
-        }
-
-        .secCol h2 {
-            font-size: 1.2rem;
-            font-weight: 300;
-            line-height: 1.2;
-            margin-bottom: 12px;
-        }
-
-        p {
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-
-        img {
-
-            width: 500px;
-            height: 500px;
-            border-radius: 100%;
-        }
-
+        flex-direction: row;
     }
+
+    .secCol {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 3rem;
+        max-width: 40%;
+    }
+
+    .secCol h2 {
+        font-size: 3.5rem;
+        font-weight: 350;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    img {
+
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -341,6 +283,53 @@ header {
     }
 
 }
+
+@media only screen and (max-width: 576px) {
+    .secContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .secRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .secCol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem;
+            max-width: 80%;
+        }
+
+        .secCol h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        img {
+
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+        }
+
+    }
+}
+
+
 
 footer {
     display: flex;
